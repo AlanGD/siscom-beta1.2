@@ -1,0 +1,104 @@
+<header>
+    <div class="d-flex justify-content-end">
+        <!--Navbar-->
+        <mdb-navbar SideClass="navbar navbar-expand-lg navbar-light white z-depth-0" [containerInside]="false">
+            <!-- Navbar brand -->
+            <mdb-navbar-brand>
+                <a class="navbar-brand" href="#"></a>
+            </mdb-navbar-brand>
+            <!-- Collapsible content -->
+            <links>
+                <!-- Links -->
+                <ul class="navbar-nav ml-auto">
+                    <li *ngIf="identity" class="nav-item">
+                        <a class="nav-link waves-light" mdbWavesEffect>
+                            <mdb-icon far icon="user"></mdb-icon> Bienvenido {{identity.nombre}} {{identity.apellidos}} </a>
+                    </li>
+                    <li *ngIf="!identity" class="nav-item">
+                        <a class="nav-link waves-light" [routerLink]="[ '/login']" routerLinkActive="deep-orange-text" mdbWavesEffect>
+                            <mdb-icon far icon="user"></mdb-icon> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link waves-light " mdbWavesEffect>
+                            <mdb-icon far icon="file"></mdb-icon> Mis pedidos</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link waves-light" mdbWavesEffect>
+                            <mdb-icon far icon="heart"></mdb-icon> Favoritos<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li *ngIf="!identity" class="nav-item">
+                        <a class="nav-link waves-light" [routerLink]="[ '/register']" routerLinkActive="deep-orange-text" mdbWavesEffect>
+                            <mdb-icon fas icon="book"></mdb-icon> Registro</a>
+                    </li>
+                    <li *ngIf="identity" class="nav-item">
+                        <a class="nav-link waves-light" (click)="logout()" routerLinkActive="deep-orange-text" mdbWavesEffect>
+                            <i class="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+                    </li>
+                </ul>
+                <!-- Links -->
+            </links>
+            <!-- Collapsible content -->
+        </mdb-navbar>
+        <!--/.Navbar-->
+    </div>
+    <div class="row">
+        <div class=" col-lg-3 col-md-3 col-sm-3">
+            <a><img class="img-fluid" [routerLink]="[ '/home']" routerLinkActive="active" src="assets/img/head/logo.png" title="SISCOM" alt="SISCOM Electrónica"></a>
+        </div>
+        <div class="col-lg-5 col-md-5 col-sm-9 my-3 mt-sm-0">
+            <div class="input-group">
+                <input type="text" class="form-control " placeholder="¿Que estas buscando?">
+                <span class="btn deep-orange" id="searchBtn"><i class="fa fa-search text-white"></i></span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 my-3 mt-sm-0">
+            <select class="browser-default custom-select " id="filter_suc" name="sucursal">
+                <option value="" disabled> Selecciona tu Sucursal <span class="fa fa-heart"></span></option>
+                <option value="1"> Lindavista </option>
+                <option value="2"> Casco de Santo Tomás </option>
+                <option value="3"> Ecatepec </option>
+                <option value="4"> Xala, Cuautitlán </option>
+            </select>
+        </div>
+    </div>
+    <div class="d-flex justify-content-end my-2">
+    </div>
+    <!--Navbar-->
+    <mdb-navbar SideClass="navbar navbar-expand-lg navbar-dark elegant-color-dark rounded mb-0" [containerInside]="false">
+        <!-- Navbar brand -->
+        <mdb-navbar-brand><a class="navbar-brand" href="#"><i class="fa fa-home"></i></a></mdb-navbar-brand>
+        <!-- Collapsible content -->
+        <links>
+            <!-- Links -->
+            <ul class="navbar-nav mr-auto">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown" dropdown>
+                    <a dropdownToggle mdbWavesEffect type="button" class="nav-link dropdown-toggle waves-light" mdbWavesEffect>
+                Categoías<span class="caret"></span></a>
+                    <div *dropdownMenu class="dropdown-menu dropdown dropdown-primary" role="menu">
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Action</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Another action</a>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Something else here</a>
+                        <div class="divider dropdown-divider"></div>
+                        <a class="dropdown-item waves-light" mdbWavesEffect href="#">Separated link</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Catálogo</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>Cómo Comprar<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light" mdbWavesEffect>FAQ<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+            <!-- Links -->
+        </links>
+        <!-- Collapsible content -->
+    </mdb-navbar>
+    <!--/.Navbar-->
+</header>

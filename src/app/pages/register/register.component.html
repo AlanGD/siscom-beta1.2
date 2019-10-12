@@ -1,0 +1,85 @@
+<app-header></app-header>
+<div class="row">
+    <div class="col-sm-9" id="content">
+        <h2 class="title mt-3">Registre su Cuenta</h2>
+        <p>SI ya se registró previamente, por favor inicie sesión en <a class="deep-orange-text" routerLink="/login" tppabs="/login">Inicio</a>.</p>
+        <form #registerForm="ngForm" (ngSubmit)="onSubmitRegister()" class="form-horizontal">
+            <fieldset id="account">
+                <legend>Sus Datos Personales</legend>
+                <div class="form-row mb-4">
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <input type="text" mdbInput mdbValidate #nombre="ngModel" name="nombre" [(ngModel)]="user.nombre" class="form-control" id="input-firstname" required/>
+                            <label for="input-firstname">Nombre(s)</label>
+                            <mdb-error *ngIf="!nombre.valid && nombre.touched" class="label label-danger">El nombre es obligatorio</mdb-error>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="md-form md-outline">
+                            <input type="text" mdbInput mdbValidate #apellidos="ngModel" name="apellidos" [(ngModel)]="user.apellidos" class="form-control" id="input-lastname" required/>
+                            <label for="input-lastname">Apellidos</label>
+                            <mdb-error *ngIf="!apellidos.valid && apellidos.touched" class="label label-danger">Los apellidos son obligatorios</mdb-error>
+                        </div>
+                    </div>
+                </div>
+                <div class="md-form md-outline">
+                    <input type="email" mdbInput mdbValidate #correo="ngModel" name="correo" [(ngModel)]="user.correo" class="form-control" id="input-email" required />
+                    <label for="input-email">E-Mail</label>
+                    <mdb-error *ngIf="!correo.valid && correo.touched" class="label label-danger">El E-Mail es obligatorio</mdb-error>
+                </div>
+                <div class="md-form md-outline">
+                    <input type="date" mdbInput mdbValidate #fecha_nacimiento="ngModel" name="fecha_nacimiento" [(ngModel)]="user.fecha_nacimiento" class="form-control" id="input-fecha_nacimiento" required />
+                    <label for="input-fecha_nacimiento"></label>
+                    <mdb-error *ngIf="!fecha_nacimiento.valid && fecha_nacimiento.touched" class="label label-danger">La fecha de nacimiento es obligatoria</mdb-error>
+                </div>
+                <div class="md-form md-outline">
+                    <input type="tel" mdbInput mdbValidate #telefono="ngModel" name="telefono" [(ngModel)]="user.telefono" class="form-control" id="input-telephone" required/>
+                    <label for="input-telephone">Teléfono</label>
+                    <mdb-error *ngIf="!telefono.valid && telefono.touched" class="label label-danger">El teléfono es obligatorio</mdb-error>
+                </div>
+            </fieldset>
+            <fieldset id="address">
+                <legend>Localidad</legend>
+                <div class="md-form md-outline">
+                    <input type="text" mdbInput #escuela="ngModel" name="escuela" [(ngModel)]="user.escuela" class="form-control" id="input-company" required />
+                    <label for="input-company">Escuela</label>
+                </div>
+                <div class="md-form md-outline">
+                    <select #sucursal="ngModel" mdbValidate name="sucursal" [(ngModel)]="user.sucursal" class="form-control" required>
+                                    <option value=""> Seleccione una sucursal</option>
+                                    <option value="Lindavista" selected="selected">Lindavista</option>
+                                    <option value="Casco de Santo Tomás">Casco de Santo Tomás</option>
+                                    <option value="Xala">Xala</option>
+                                    <option value="Ecatepec">Ecatepec</option>
+                                </select>
+                    <mdb-error *ngIf="!sucursal.valid && sucursal.touched" class="label label-danger">La sucursal es obligatoria</mdb-error>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Su Clave</legend>
+                <div class="md-form md-outline">
+                    <label for="input-password">Clave</label>
+                    <input type="password" mdbInput #password="ngModel" name="password" [(ngModel)]="user.password" class="form-control" id="input-password" required />
+                </div>
+                <div class="md-form md-outline">
+                    <label for="input-confirm">Confirmar Clave</label>
+                    <input type="password" mdbInput mdbValidate #confirm_password="ngModel" name="confirm_password" [(ngModel)]="user.confirm_password" class="form-control" id="input-confirm" name="confirm" required />
+                    <mdb-error *ngIf="!confirm_password.valid && confirm_password.touched" class="label label-danger">El password es obligatorio</mdb-error>
+                </div>
+            </fieldset>
+            <div *ngIf="alertRegister">
+                <div class="alert alert-danger">
+                    {{alertRegister}}
+                </div>
+            </div>
+            <div class="buttons my-3">
+                <div class="pull-right">
+                    <input type="checkbox" value="1" name="agree"> &nbsp; He leído y estoy de acuerdo con la <a class="agree deep-orange-text" href="#"><b>Política de Privacidad</b></a> &nbsp;
+                    <button mdbBtn color="deep-orange" type="submit">Continuar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--Middle Part End -->
+</div>
+<app-footer></app-footer>
