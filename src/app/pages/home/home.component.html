@@ -1,176 +1,419 @@
 <app-header></app-header>
-<!-- row general -->
-<div class="row my-3">
-    <!-- principio columna uno -->
-    <div class="col-lg-3 d-none d-sm-block">
-        <label for="categorias" class="h5">Categorias</label>
-        <div class="progress" id="progresCategorias">
-            <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <button mdbBtn class="waves-light z-depth-0 " id="btnCategorias" type="button" (click)="cables.toggle()" mdbWavesEffect>
-                    Cables
-                  </button>
-        <div class="" mdbCollapse #cables="bs-collapse">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-            </ul>
-        </div>
-        <button mdbBtn class="waves-light z-depth-0" id="btnCategorias" type="button" (click)="compuertas.toggle()" mdbWavesEffect>
-                    Compuertas
-                  </button>
-        <div class="" mdbCollapse #compuertas="bs-collapse">
-            <ul class="list-group list-group-flush">
-                <li class="list-group-item">Cras justo odio</li>
-                <li class="list-group-item">Dapibus ac facilisis in</li>
-            </ul>
-        </div>
-        <label for="categorias" class="h5 mt-3">Más vendidos</label>
-        <div class="progress" id="progresCategorias">
-            <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+<div class="container">
+    <!-- row general -->
+    <div class="row my-3">
+        <!-- principio columna uno -->
+        <div class="col-lg-3 d-none d-sm-block">
+            <label for="categorias" class="h5">Categorias</label>
+            <div class="progress" id="progresCategorias">
+                <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <button mdbBtn class="waves-light z-depth-0 " id="btnCategorias" type="button" (click)="cables.toggle()" mdbWavesEffect>
+                        Cables
+                      </button>
+            <div class="" mdbCollapse #cables="bs-collapse">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                </ul>
+            </div>
+            <button mdbBtn class="waves-light z-depth-0" id="btnCategorias" type="button" (click)="compuertas.toggle()" mdbWavesEffect>
+                        Compuertas
+                      </button>
+            <div class="" mdbCollapse #compuertas="bs-collapse">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                </ul>
+            </div>
+            <label for="categorias" class="h5 mt-3">Más vendidos</label>
+            <div class="progress" id="progresCategorias">
+                <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div>
+                <div>
+                    <small><strong> Sensor de tempeatura </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/macbook_air_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Inductor SMD </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/sony_vaio_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Arduino Leonardo </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/iphone_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+
+            <div>
+                <div>
+                    <small><strong> Cable Plano </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/imac_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Iphone </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/htc_touch_hd_1-60x60old.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <label for="categorias" class="h5 mt-3">Cursos</label>
+            <div class="progress" id="progresCategorias">
+                <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <img class="img-fluid my-3" src="assets/img/banner/cs.png" alt="">
+            </div>
+            <div>
+                <img class="img-fluid my-3" src="assets/img/banner/sb.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-fluid my-3" src="assets/img/banner/sb3.jpg" alt="">
+            </div>
+            <label for="categorias" class="h5 mt-3">Descuentos del Día</label>
+            <div class="progress" id="progresCategorias">
+                <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Sensor de tempeatura </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/macbook_air_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Inductor SMD </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/sony_vaio_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Arduino Leonardo </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/iphone_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Cable Plano </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/imac_1-60x60.jpg" alt="">
+                <small>$20.00</small>
+            </div>
+            <div>
+                <div>
+                    <small><strong> Iphone </strong></small>
+                </div>
+                <img class="img-fluid" src="assets/img/product/Img60x60/htc_touch_hd_1-60x60old.jpg" alt="">
+                <small>$20.00</small>
+            </div>
         </div>
 
-        <div>
-            <div>
-                <small><strong> Sensor de tempeatura </strong></small>
+        <!-- inicio de la columna dos -->
+        <div class="col-lg-9">
+            <!-- carousel principal -->
+            <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+                <mdb-carousel-item>
+                    <div class="view w-100">
+                        <img class="d-block w-100" src="assets/img/slider/banner-1.jpg" alt="First slide">
+                        <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Light mask</h3>
+                        <p>First text</p>
+                    </div>
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <div class="view w-100">
+                        <img class="d-block w-100" src="assets/img/slider/banner-2.jpg" alt="Second slide">
+                        <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Strong mask</h3>
+                        <p>Secondary text</p>
+                    </div>
+                </mdb-carousel-item>
+                <mdb-carousel-item>
+                    <div class="view w-100">
+                        <img class="d-block w-100" src="assets/img/slider/banner-3.jpg" alt="Third slide">
+                        <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                    </div>
+                    <div class="carousel-caption">
+                        <h3 class="h3-responsive">Slight mask</h3>
+                        <p>Third text</p>
+                    </div>
+                </mdb-carousel-item>
+            </mdb-carousel>
+            <!-- fin carousel principal -->
+            <!-- catalogo de categorias -->
+            <div class="my-1">
+                <a routerLinkActive="deep-orange-text" class="waves-light mr-2 h5" type="button" (click)="populares.toggle()" mdbWavesEffect>
+                Populares
+            </a>
+                <a routerLinkActive="deep-orange-text" class="waves-light mx-2 h5" type="button" (click)="lanzamientos.toggle()" mdbWavesEffect>
+                Lanzamientos
+            </a>
+                <a routerLinkActive="deep-orange-text" class="waves-light mx-2 h5" type="button" (click)="masVendidos.toggle()" mdbWavesEffect>
+                Más Vendidos
+            </a>
             </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/macbook_air_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Inductor SMD </strong></small>
+            <!-- populares -->
+            <div class="" mdbCollapse #populares="bs-collapse">
+                <div class="card-deck my-1">
+                    <div class="card text-center ">
+                        <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/sony_vaio_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Arduino Leonardo </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/iphone_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
+            <!-- fin populares -->
 
-        <div>
-            <div>
-                <small><strong> Cable Plano </strong></small>
+            <!-- lanzamientos -->
+            <div class="" mdbCollapse #lanzamientos="bs-collapse">
+                <div class="card-deck my-2">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/imac_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Iphone </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/htc_touch_hd_1-60x60old.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <label for="categorias" class="h5 mt-3">Cursos</label>
-        <div class="progress" id="progresCategorias">
-            <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div>
-            <img class="img-fluid my-3" src="assets/img/banner/cs.png" alt="">
-        </div>
-        <div>
-            <img class="img-fluid my-3" src="assets/img/banner/sb.jpg" alt="">
-        </div>
-        <div>
-            <img class="img-fluid my-3" src="assets/img/banner/sb3.jpg" alt="">
-        </div>
-        <label for="categorias" class="h5 mt-3">Descuentos del Día</label>
-        <div class="progress" id="progresCategorias">
-            <div class="progress-bar deep-orange" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <div>
-            <div>
-                <small><strong> Sensor de tempeatura </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/macbook_air_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Inductor SMD </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/sony_vaio_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Arduino Leonardo </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/iphone_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Cable Plano </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/imac_1-60x60.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-        <div>
-            <div>
-                <small><strong> Iphone </strong></small>
-            </div>
-            <img class="img-fluid" src="assets/img/product/Img60x60/htc_touch_hd_1-60x60old.jpg" alt="">
-            <small>$20.00</small>
-        </div>
-    </div>
+            <!-- fin lanzamientos -->
 
-    <!-- inicio de la columna dos -->
-    <div class="col-lg-9">
-        <!-- carousel principal -->
-        <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-            <mdb-carousel-item>
-                <div class="view w-100">
-                    <img class="d-block w-100" src="assets/img/slider/banner-1.jpg" alt="First slide">
-                    <div class="mask rgba-black-light waves-light" mdbWavesEffect></div>
+            <!-- mas vendidos -->
+            <div class="" mdbCollapse #masVendidos="bs-collapse">
+                <div class="card-deck my-2">
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
+                        <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                        <div class="card-body">
+                            <p class=" font-weight-bold text-center">Fuente Conmutada</p>
+                            <p class="card-text text-center">$428.00</p>
+                            <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Light mask</h3>
-                    <p>First text</p>
+            </div>
+            <!-- fin mas vendidos -->
+
+
+            <div class="card-deck ">
+                <div class=" col-sm-6 card text-center hoverable">
+                    <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
                 </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-                <div class="view w-100">
-                    <img class="d-block w-100" src="assets/img/slider/banner-2.jpg" alt="Second slide">
-                    <div class="mask rgba-black-strong waves-light" mdbWavesEffect></div>
+                <div class="col-sm-6 card text-center hoverable">
+                    <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Strong mask</h3>
-                    <p>Secondary text</p>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
                 </div>
-            </mdb-carousel-item>
-            <mdb-carousel-item>
-                <div class="view w-100">
-                    <img class="d-block w-100" src="assets/img/slider/banner-3.jpg" alt="Third slide">
-                    <div class="mask rgba-black-slight waves-light" mdbWavesEffect></div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
                 </div>
-                <div class="carousel-caption">
-                    <h3 class="h3-responsive">Slight mask</h3>
-                    <p>Third text</p>
+            </div>
+            <div class="card-deck my-3">
+                <div class=" col-sm-6 card text-center">
+                    <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
                 </div>
-            </mdb-carousel-item>
-        </mdb-carousel>
-        <!-- fin carousel principal -->
-        <!-- catalogo de categorias -->
-        <div class="my-1">
-            <a routerLinkActive="deep-orange-text" class="waves-light mr-2 h5" type="button" (click)="populares.toggle()" mdbWavesEffect>
-            Populares
-        </a>
-            <a routerLinkActive="deep-orange-text" class="waves-light mx-2 h5" type="button" (click)="lanzamientos.toggle()" mdbWavesEffect>
-            Lanzamientos
-        </a>
-            <a routerLinkActive="deep-orange-text" class="waves-light mx-2 h5" type="button" (click)="masVendidos.toggle()" mdbWavesEffect>
-            Más Vendidos
-        </a>
-        </div>
-        <!-- populares -->
-        <div class="" mdbCollapse #populares="bs-collapse">
-            <div class="card-deck my-1">
+                <div class="col-sm-6 card text-center">
+                    <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck my-3">
+                <div class=" col-sm-6 card text-center">
+                    <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+                <div class="col-sm-6 card text-center">
+                    <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="card-title font-weight-bold">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
+                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
+                    <div class="card-body">
+                        <p class="font-weight-bold text-center">Fuente Conmutada</p>
+                        <p class="card-text text-center">$428.00</p>
+                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="card-deck my-2">
                 <div class="card text-center">
                     <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
                     <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
@@ -208,305 +451,62 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <!-- fin populares -->
+     -->
+            <div class="row my-3">
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/banner/small-banner-410x170.jpg" alt="">
+                </div>
+                <div class="col-lg-6">
+                    <img class="img-fluid" src="assets/img/banner/small-banner1-410x170.jpg" alt="">
+                </div>
 
-        <!-- lanzamientos -->
-        <div class="" mdbCollapse #lanzamientos="bs-collapse">
-            <div class="card-deck my-2">
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- fin lanzamientos -->
-
-        <!-- mas vendidos -->
-        <div class="" mdbCollapse #masVendidos="bs-collapse">
-            <div class="card-deck my-2">
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-                <div class="card text-center">
-                    <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
-                    <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                    <div class="card-body">
-                        <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                        <p class="card-text text-center">$428.00</p>
-                        <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- fin mas vendidos -->
-
-
-        <div class="card-deck ">
-            <div class=" col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-deck my-3">
-            <div class=" col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-        </div>
-        <div class="card-deck my-3">
-            <div class=" col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_syncmaster_941bw-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList" mdbTooltip="add to wish List" placement="right"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="col-sm-6 card text-center">
-                <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x2000.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/sony_vaio_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="card-title font-weight-bold">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/samsung_tab_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class="font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="card-deck my-2">
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/canon_eos_5d_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/hp_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/htc_touch_hd_1-200x200.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-            <div class="card text-center">
-                <img class="card-img-top" src="assets/img/product/HF15W-SPL-3_3.jpg" alt="Card image cap">
-                <span class="my-1 mx-1 text-left"><i class="fa fa-heart" id="wishList"></i></span>
-                <div class="card-body">
-                    <p class=" font-weight-bold text-center">Fuente Conmutada</p>
-                    <p class="card-text text-center">$428.00</p>
-                    <a href="#" class="btn btn-raised btn-deep-orange mx-auto"><span class="fa fa-shopping-bag mx-1"></span>Agregar </a>
-                </div>
-            </div>
-        </div>
- -->
-        <div class="row my-3">
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/banner/small-banner-410x170.jpg" alt="">
-            </div>
-            <div class="col-lg-6">
-                <img class="img-fluid" src="assets/img/banner/small-banner1-410x170.jpg" alt="">
             </div>
 
-        </div>
-
-        <!--  <div class="d-flex justify-content-start">
+            <!--  <div class="d-flex justify-content-start">
+                <div class="col-lg-6 col-md-6 col-sm-12 my-2">
+                    <img class="img-fluid" src="assets/img/banner/small-banner-410x170.jpg" alt="">
+                </div>
+    
+            </div>
+    
             <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-                <img class="img-fluid" src="assets/img/banner/small-banner-410x170.jpg" alt="">
-            </div>
+                <img class="img-fluid" src="assets/img/banner/small-banner1-410x170.jpg" alt="">
+            </div> -->
 
+            <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
+                <mdb-carousel-item *ngFor="let item of slides; let i = index">
+                    <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
+                        <mdb-card class="my-1">
+                            <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
+                        </mdb-card>
+                    </div>
+                </mdb-carousel-item>
+            </mdb-carousel>
+
+            <!-- fin de la columna 2 -->
+        </div>
+        <!-- fin row general -->
+    </div>
+
+
+    <div class="row d-flex justify-content-around m-3 ">
+        <div class="col text-center border rounded mb-0 my-3 mx-1">
+            <p class="pt-1 px-0"><strong> Retorno gratis y facil </strong></p>
+            <p>Devolución gratuita en 7 días después de la compra</p>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-sm-12 my-2">
-            <img class="img-fluid" src="assets/img/banner/small-banner1-410x170.jpg" alt="">
-        </div> -->
+        <div class="col text-center border rounded mb-0 my-3 mx-1">
+            <p class="py-1">Envío Gratis</p>
 
-        <mdb-carousel [isControls]="false" class="carousel-multi-item multi-animation" [type]="'carousel-multi-item'" [animation]="'slide'">
-            <mdb-carousel-item *ngFor="let item of slides; let i = index">
-                <div class="col-md-4" [ngClass]="{'d-none d-md-block': cardIndex !== 0}" *ngFor="let card of item; let cardIndex = index">
-                    <mdb-card class="my-1">
-                        <mdb-card-img [src]="card.img" alt="Card image cap"></mdb-card-img>
-                    </mdb-card>
-                </div>
-            </mdb-carousel-item>
-        </mdb-carousel>
+            <p>Pedidos de más de $1,000 pesos</p>
+        </div>
+        <div class="col text-center border rounded mb-0 my-3 mx-1">
+            <p class="pt-2">Mejoramos tu Precio</p>
 
-        <!-- fin de la columna 2 -->
-    </div>
-    <!-- fin row general -->
-</div>
+            <p>Con tu ticket de compra directo en sucursal</p>
 
-
-<div class="row d-flex justify-content-around m-3 ">
-    <div class="col text-center border rounded mb-0 my-3 mx-1">
-        <p class="pt-1 px-0"><strong> Retorno gratis y facil </strong></p>
-        <p>Devolución gratuita en 7 días después de la compra</p>
-    </div>
-
-    <div class="col text-center border rounded mb-0 my-3 mx-1">
-        <p class="py-1">Envío Gratis</p>
-
-        <p>Pedidos de más de $1,000 pesos</p>
-    </div>
-    <div class="col text-center border rounded mb-0 my-3 mx-1">
-        <p class="pt-2">Mejoramos tu Precio</p>
-
-        <p>Con tu ticket de compra directo en sucursal</p>
-
+        </div>
     </div>
 </div>
-
-
 
 <app-footer></app-footer>
